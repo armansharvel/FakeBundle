@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "FakeBundle",
     products: [
-        .executable(name: "fakebundle", targets: ["fakebundle"])
+        .executable(name: "FakeBundle", targets: ["FakeBundle"])
     ],
     dependencies: [
         .package(url: "https://github.com/kylef/Commander.git", from: "0.8.0"),
@@ -13,7 +13,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "fakebundle",
+            name: "FakeBundle",
             dependencies: ["Commander", "PathKit"]),
     ]
 )
